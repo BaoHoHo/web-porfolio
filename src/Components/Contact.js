@@ -47,8 +47,7 @@ const Contact = () => {
         {result && (
           <p className={`$result.success ? 'success' : 'error'`}>{result.message}</p>
         )}
-        <h5>843 Claytor Sq</h5>
-        <h5>Blacksburg, VA 24060</h5>
+        <h5>843 Claytor Sq, Blacksburg, VA 24060</h5>
         <h5>(757) 325-0401</h5>
         <h5>bgho21@vt.edu</h5>
 
