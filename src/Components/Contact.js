@@ -20,37 +20,41 @@ const Contact = () => {
     event.preventDefault();
 
     axios
-     .post(`${config.api}/send`, { ...state })
-     .then(response => {
-       setResult(response.data);
-       setState({ name: '', email: '', subject: '', message: '' });
-     })
-     .catch(() => {
-       setResult({ success: false, message: 'Something went wrong. Please try again'});
-   });
+      .post(`${config.api}/send`, { ...state })
+      .then(response => {
+        setResult(response.data);
+        setState({ name: '', email: '', subject: '', message: '' });
+      })
+      .catch(() => {
+        setResult({ success: false, message: 'Something went wrong. Please try again' });
+      });
   };
   const onInputChange = event => {
     const { name, value } = event.target;
     setState({
       ...state,
       [name]: value
-    }); 
+    });
 
   };
 
   return (
     <div className="container contact-cont">
       <div className="col-md-6 offset-md-3">
-        
+
         <h2>Contact <i className="fas fa-envelope-open-text"></i></h2>
         <p className="information">If you have any question or would like to contact me for work, please send me an email by filling out this form. I would love to hear from you!</p>
         {result && (
           <p className={`$result.success ? 'success' : 'error'`}>{result.message}</p>
         )}
-        
+        <h5>843 Claytor Sq</h5>
+        <h5>Blacksburg, VA 24060</h5>
+        <h5>(757) 325-0401</h5>
+        <h5>bgho21@vt.edu</h5>
 
 
-        <form onSubmit={sendEmail}>
+
+        {/* <form onSubmit={sendEmail}>
           <Form.Group controlId="name">
             <Form.Label>Full Name</Form.Label>
             <Form.Control type="text" name="name" value={state.name} placeholder="Please Enter your full name" onChange={onInputChange}/>
@@ -91,7 +95,7 @@ const Contact = () => {
     } variant="primary" type="submit">
             Submit
           </Button>
-        </form>
+        </form> */}
       </div>
     </div>
   );

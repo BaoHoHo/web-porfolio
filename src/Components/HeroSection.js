@@ -4,7 +4,7 @@ import '../App.css';
 import axios from 'axios';
 import { Button, Spinner } from 'react-bootstrap';
 import ReactRoundedImage from 'react-rounded-image';
-import MyPhoto from '../images/profilepic2.jpeg';
+import MyPhoto from '../images/profilepic.jpg';
 import { myBody } from '../FrontPage';
 
 function HeroSection() {
@@ -37,8 +37,8 @@ function HeroSection() {
 							<Spinner animation="border" variant="info" />
 						)}
 					</div>
-
-					<div className="hero-btns">
+					<h1>Kingsley Ho</h1>
+					{/* <div className="hero-btns">
 						<Button
 							className="btns"
 							variant="warning"
@@ -47,7 +47,7 @@ function HeroSection() {
 						>
 							Download Resume <i className="fas fa-download" />
 						</Button>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
