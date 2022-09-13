@@ -35,7 +35,7 @@ function NavBar() {
 	return (
 		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="thisNav">
 			<Link className="logo" style={{textDecoration: 'none'}} to='/'>
-				<Navbar.Brand>Giang's Portfolio</Navbar.Brand>
+				<Navbar.Brand>Kingsley's Portfolio</Navbar.Brand>
 			</Link>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
@@ -58,8 +58,8 @@ function NavBar() {
 					{logState}
 				</Nav>
 				<Nav>
-					<Nav.Link href="https://github.com/giangvubinhng" target="_blank"><i className="fab fa-github"></i></Nav.Link>
-					<Nav.Link eventKey={2} href="https://www.linkedin.com/in/giangvubinhn/" target="_blank">
+					<Nav.Link href="https://github.com/BaoHoHo" target="_blank"><i className="fab fa-github"></i></Nav.Link>
+					<Nav.Link eventKey={2} href="https://www.linkedin.com/in/baogho/" target="_blank">
 						<i className="fab fa-linkedin"></i>
 					</Nav.Link>
 				</Nav>
